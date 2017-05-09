@@ -318,7 +318,7 @@ a:hover {
 
 section.section {
 	margin:0;
-	padding: 80px 0 60px 0;
+	padding: 20px 0 20px 0;
 }
 
 .bg-white {
@@ -338,13 +338,13 @@ section.section {
  --- Parallax ---
 ============================= */
 
-#parallax1{	
+#portfolio{	
 	background-image: url(../img/parallax/workard.jpg);
 }
 #parallax2{	
 	background-image: url(../img/parallax/workard.jpg);
 }
-#testimonials{	
+#about{	
 	background-image: url(../img/parallax/workard.jpg);
 }
 /*===========================
@@ -728,23 +728,23 @@ nav#filter a {
 
 
 /*===========================
-  --- Testimonial ----
+  --- About ----
 =========================== */
-#testimonals {
+#about {
 	padding-top: 20px;
-	padding-bottom:40px;
+	padding-bottom:20px;
 	position:relative;
-	margin-top:50px;
+	margin-top:0px;
 }
-.testimonial i {
+.about i {
 	color: #fff;
 }
-.testimonial span.author {
+.about span.author {
 	color: #fff;
 	font-weight: 700;
 }
 
-.testimonial h5 {
+.about h5 {
 	color: #fff;
 	font-size: 18px;
 	font-family: Georgia, sans-serif;

@@ -737,6 +737,14 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container2 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -752,6 +760,12 @@ pre code {
     width: 1170px;
   }
 }
+@media (min-width: 768px) {
+  .container2 {
+    width: 800px;
+  }
+}
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -4383,10 +4397,10 @@ a.list-group-item.active > .badge,
   font-size: 21px;
   font-weight: 200;
 }
-.container .jumbotron {
+.container .jumbotron .container2 {
   border-radius: 6px;
 }
-.jumbotron .container {
+.jumbotron .container .container2 {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -4394,7 +4408,7 @@ a.list-group-item.active > .badge,
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .container .jumbotron {
+  .container .jumbotron .container2 {
     padding-right: 60px;
     padding-left: 60px;
   }

@@ -339,13 +339,13 @@ section.section {
 ============================= */
 
 #parallax1{	
-	background-image: url(../img/parallax/bokeh1.jpg);
+	background-image: url(../img/parallax/gradient.jpg);
 }
 #parallax2{	
-	background-image: url(../img/parallax/meeting.png);
+	background-image: url(../img/parallax/gradient.jpg);
 }
 #testimonials{	
-	background-image: url(../img/parallax/colorful.jpeg);
+	background-image: url(../img/parallax/gradient.jpg);
 }
 /*===========================
   --- Header & menu ----

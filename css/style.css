@@ -339,23 +339,13 @@ section.section {
 ============================= */
 
 #parallax1{	
-<<<<<<< HEAD
-	background-image: url(../img/parallax/gradient.jpg);
+	background-image: url(../img/parallax/workard.jpg);
 }
 #parallax2{	
-	background-image: url(../img/parallax/gradient.jpg);
+	background-image: url(../img/parallax/workard.jpg);
 }
 #testimonials{	
-	background-image: url(../img/parallax/gradient.jpg);
-=======
-	background-image: url(../img/parallax/colorful.jpeg);
-}
-#parallax2{	
-	background-image: url(../img/parallax/bokeh1.jpg);
-}
-#testimonials{	
-	background-image: url(../img/parallax/meeting.png);
->>>>>>> master
+	background-image: url(../img/parallax/workard.jpg);
 }
 /*===========================
   --- Header & menu ----
@@ -448,8 +438,8 @@ h1 a.navbar-brand {
 =========================== */
 
 section.featured {
-	padding: 200px 0 60px;
-	background: lightseagreen;
+	padding: 150px 0 20px;
+	background: #3a873a;
 	color: #fdfdfd;
 }
 

@@ -339,6 +339,7 @@ section.section {
 ============================= */
 
 #parallax1{	
+<<<<<<< HEAD
 	background-image: url(../img/parallax/gradient.jpg);
 }
 #parallax2{	
@@ -346,6 +347,15 @@ section.section {
 }
 #testimonials{	
 	background-image: url(../img/parallax/gradient.jpg);
+=======
+	background-image: url(../img/parallax/colorful.jpeg);
+}
+#parallax2{	
+	background-image: url(../img/parallax/bokeh1.jpg);
+}
+#testimonials{	
+	background-image: url(../img/parallax/meeting.png);
+>>>>>>> master
 }
 /*===========================
   --- Header & menu ----

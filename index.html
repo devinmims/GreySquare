@@ -15,15 +15,10 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/elements.css">
 		<!-- skin -->
 		<link rel="stylesheet" href="skin/default.css">
-		<link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon" />
-        <!-- =======================================================
-            Theme Name: Amoeba
-            Theme URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
-            Author: BootstrapMade
-            Author URL: https://bootstrapmade.com
-        ======================================================= -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </head>
 	 
     <body>
@@ -134,8 +129,6 @@
 				<div class="row mar-bot40">
 					<div class="col-md-offset-3 col-md-6">
 						<div class="section-header">
-							<!--h2 class="section-heading animated" data-animation="bounceInUp">Our Team</h2-->
-							<!--p>We started as co-workers and became friends. It just so happens we work well together.</p-->
 							<p><br><br><b>We are a team of developers and entrepreneurs that have pooled together a diverse set of talents and experience.  It is our goal to provide software applications that elevate user experience to a new level.  The concepts we are building are new and intended to create value in places where it did not exist before.</p></b>
 						</div>
 					</div>
@@ -193,7 +186,7 @@
 			</div>	
 		</section>
 		
-		<!-- section portfolop -->
+		<!-- section portfolio -->
 		<section id="section-portfolio" class="section appear clearfix">
 			<div class="container">
 				
@@ -211,7 +204,6 @@
 				<div class="row mar-bot40">
 					<div class="col-md-offset-3 col-md-6">
 						<div class="section-header">
-							<!--h2 class="section-heading animated" data-animation="bounceInUp">Portfolio</h2-->
 							<b>We are currently devoting our full resources to the development of an application suite that will provide craft beer lovers with exciting new ways to manage their beer collections, locate trading partners, research the beers they love, and much more.
 							<p><br>This application suite will feature web and mobile applications as well as data assets that can be used in the development of other applications through our API.  Although we are not quite ready to share the full details of these applications, we will tell you that we are passionate about these new and powerful applications. We believe that your craft beer experience is about to get way better than it has ever been before!
 							</p></b>
@@ -401,29 +393,34 @@
 			<div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
 				<div class="col-sm-12 align-center">
                     <ul class="social-network social-circle">
-                        <!--li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li-->
                         <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 						<li><a href="#" class="icoCareers" title="Careers"><i class="fa fa-user"></i></a></li>
-						<li><a href="#" class="icoContact" title="Contact"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="#!" class="icoContact" title="Contact" id="popup" onclick="div_show()"><i class="fa fa-envelope"></i></a></li>
+
+						<div id="abc">
+						<!-- Popup Div Starts Here -->
+						<div id="popupContact">
+						<!-- Contact Us Form -->
+						<form action="#" id="form" method="post" name="form">
+						<img id="close" src="img/icons/3.png" onclick ="div_hide()">
+						<h3><b>Contact Us</b></h3>
+						<hr>
+						<input id="name" name="name" placeholder="Name" type="text">
+						<input id="email" name="email" placeholder="Email" type="text">
+						<textarea id="msg" name="message" placeholder="Message"></textarea>
+						<a href="javascript:%20check_empty()" id="submit">Send</a>
+						</form>
+						</div>
+				</div>
                     </ul>				
 				</div>
 			</div>
 
 			<div class="row align-center copyright">
-					<!--div class="col-sm-12"><p>Copyright &copy; Grey Square Technologies, LLC 2017</p-->
 					<div class="col-sm-12"><p>Copyright Grey Square Technologies, LLC 2017</p> 
 					<b><a href="privacy.htm">Privacy</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="terms.html">Terms</a></b>
                         <div class="credits">
-                            <!-- 
-                                All the links in the footer should remain intact. 
-                                You can delete the links only if you purchased the pro version.
-                                Licensing information: https://bootstrapmade.com/license/
-                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Amoeba
-                            -->
                             <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                         </div>
                     </div>
@@ -447,6 +444,7 @@
 	<script src="js/stellar.js"></script>
 	<script src="js/jquery.appear.js"></script>
     <script src="js/main.js"></script>
+	<script src="js/contact.js"></script>
     <!--script src="contactform/contactform.js"></script-->
     
 	</body>

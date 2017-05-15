@@ -9,9 +9,11 @@ function check_empty()
         //document.getElementById('form').submit();
         //alert("Form Submitted Successfully...");
         var email = {
-            emailAddress = document.getElementById('email').value,
-            subject = "Email from GreySquare",
-            message = document.getElementById('msg').value
+            toEmailAddress: "contact@greysquaretechnologies.com",
+            fromEmailAddress: document.getElementById('email').value,
+            subject: "Email from GreySquare",
+            message: document.getElementById('msg').value,
+            name: document.getElementById('name').valu
         }
         sendEmail(email);
     }
@@ -32,20 +34,15 @@ function sendEmail(email)
     var urlToApi = "http://66.56.51.110:5000/api";
     $.ajax({
             method: "POST",
-            dataType: "json",
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(email),     
             url: urlToApi + "/email/",
-            //url: urlToApi + "/userbeerlist/",
             success: function(data) {  
-                //location.reload();
-                console.log(data);
-                console.log('probably sent');
+                document.getElementById('abc').style.display = "none";
             },
             error: function(jqXHR, textStatus, errorThrown){
                 console.log(textStatus);
                 alert("There was like, an error doing that");
-                //location.reload();
             }
         });
 }

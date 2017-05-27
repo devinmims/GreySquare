@@ -31,7 +31,7 @@ function div_hide()
 
 function sendEmail(email)
 {
-    var urlToApi = "http://66.56.51.110:5000/api";
+    var urlToApi = "api.greysquaretechnologies.com/api/email";
     $.ajax({
             method: "POST",
             contentType: "application/json; charset=utf-8",

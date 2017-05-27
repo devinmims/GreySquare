@@ -1,10 +1,10 @@
 // Validating Empty Field
-function check_empty() 
+function check_empty()
 {
-    if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") 
+    if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "")
     {
         alert("Fill All Fields !");
-    } else 
+    } else
     {
         //document.getElementById('form').submit();
         //alert("Form Submitted Successfully...");
@@ -19,7 +19,7 @@ function check_empty()
     }
 }
 //Function To Display Popup
-function div_show() 
+function div_show()
 {
     document.getElementById('abc').style.display = "block";
 }
@@ -31,13 +31,13 @@ function div_hide()
 
 function sendEmail(email)
 {
-    var urlToApi = "api.greysquaretechnologies.com/api/email";
+    var urlToApi = "http://www.greysquaretechnologies.com:5000/api";
     $.ajax({
             method: "POST",
             contentType: "application/json; charset=utf-8",
-            data: JSON.stringify(email),     
+            data: JSON.stringify(email),
             url: urlToApi + "/email/",
-            success: function(data) {  
+            success: function(data) {
                 document.getElementById('abc').style.display = "none";
             },
             error: function(jqXHR, textStatus, errorThrown){

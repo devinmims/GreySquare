@@ -13,7 +13,7 @@ function check_empty()
             fromEmailAddress: document.getElementById('email').value,
             subject: "Email from GreySquare",
             message: document.getElementById('msg').value,
-            name: document.getElementById('name').valu
+            name: document.getElementById('name').value
         }
         sendEmail(email);
     }
